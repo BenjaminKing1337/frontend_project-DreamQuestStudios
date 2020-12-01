@@ -331,16 +331,31 @@ body.home {
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
-                h2{color: $accent; padding-bottom: 5px;}
+                background-image: url("https://ksr-ugc.imgix.net/assets/026/598/698/9fa2af8cd6da9a25e6a1a73f1d5d1c9b_original.jpg?ixlib=rb-2.1.0&crop=faces&w=1552&h=873&fit=crop&v=1569379860&auto=format&frame=1&q=92&s=a019e547dad832795a4bc56ad5f1e1be");
+                background-size: 100% 100%;
+                overflow: hidden;
+                h3{
+                    background-color: #434343d0;
+                    border-radius: 5px;
+                    color: $accent;
+                    padding: 5px;
+                    position: absolute;
+                    transition: .5s;
+                }
                 p{
+                    background-color: #434343d0;
+                    border-radius: 10px;
                     visibility: hidden;
                     opacity: 0; 
-                    transition: visibility 0s, opacity 0.5s linear;
+                    transform: translateY(300px);
+                    transition: .7s;
+                    margin: auto 0;
+                    padding: 5px;
                 }
                 &:hover{
-                    h2{visibility: hidden; opacity: 0;}
-                    p{visibility: visible; opacity: 1;}
-                    align-items: center;
+                    h3{visibility: hidden; opacity: 0; transform: translateY(20px);}
+                    p{visibility: visible; opacity: 1; transform: translateY(0);}
+                    
                 }
             }
         }

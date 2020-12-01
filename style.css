@@ -422,33 +422,45 @@ body.home .newsVisited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url("https://ksr-ugc.imgix.net/assets/026/598/698/9fa2af8cd6da9a25e6a1a73f1d5d1c9b_original.jpg?ixlib=rb-2.1.0&crop=faces&w=1552&h=873&fit=crop&v=1569379860&auto=format&frame=1&q=92&s=a019e547dad832795a4bc56ad5f1e1be");
+  background-size: 100% 100%;
+  overflow: hidden;
 }
 
-.content .content_box_mythos .mythos .myth h2 {
+.content .content_box_mythos .mythos .myth h3 {
+  background-color: #434343d0;
+  border-radius: 5px;
   color: #e6f512;
-  padding-bottom: 5px;
+  padding: 5px;
+  position: absolute;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .content .content_box_mythos .mythos .myth p {
+  background-color: #434343d0;
+  border-radius: 10px;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 0s, opacity 0.5s linear;
-  transition: visibility 0s, opacity 0.5s linear;
+  -webkit-transform: translateY(300px);
+          transform: translateY(300px);
+  -webkit-transition: .7s;
+  transition: .7s;
+  margin: auto 0;
+  padding: 5px;
 }
 
-.content .content_box_mythos .mythos .myth:hover {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.content .content_box_mythos .mythos .myth:hover h2 {
+.content .content_box_mythos .mythos .myth:hover h3 {
   visibility: hidden;
   opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
 }
 
 .content .content_box_mythos .mythos .myth:hover p {
   visibility: visible;
   opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 /*# sourceMappingURL=style.css.map */

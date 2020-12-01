@@ -27,7 +27,7 @@ get_header(); ?>
                     </ul>
                 </nav>
             <?php } ?>
-            <!-- splitting layout of this specific page into columns -->
+            
             <div class="content">
                 <h2>Inspiration</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit. </p>
@@ -38,27 +38,27 @@ get_header(); ?>
 
                     <div class="mythos">
                         <div class="myth">
-                            <h2>Azathoth</h2>
+                            <h3>Azathoth</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
                         </div>
                         <div class="myth">
-                            <h2>Nyarlathotep</h2>
+                            <h3>Nyarlathotep</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
                         </div>
                         <div class="myth">
-                            <h2>The Nameless City</h2>
+                            <h3>The Nameless City</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
                         </div>
                         <div class="myth">
-                            <h2>Inhabitants of the Nameless City</h2>
+                            <h3>Nameless Inhabitants</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
                         </div>
                         <div class="myth">
-                            <h2>Outer Gods</h2>
+                            <h3>Outer Gods</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
                         </div>
                         <div class="myth">
-                            <h2>Lovecraftian works</h2>
+                            <h3>Lovecraftian works</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
                         </div>
                     </div>
