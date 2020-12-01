@@ -29,42 +29,40 @@ get_header(); ?>
             <?php } ?>
             <!-- splitting layout of this specific page into columns -->
             <div class="content">
-                <h2>Inspiration</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit. </p>
-                        
+                <h2><?php the_field('1st_header'); ?></h2>
+                <p><?php the_field('1st_paragraph'); ?></p>
                 <div class="content_box_mythos">
-                    <h2>Relevant Mythos</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
-
+                    <h2><?php the_field('2nd_header'); ?></h2>
+                    <p><?php the_field('2nd_paragraph'); ?></p>
                     <div class="mythos">
                         <div class="myth">
-                            <h2>Azathoth</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
+                            <h2><?php the_field('1st_m_header'); ?></h2>
+                            <p><?php the_field('1st_m_paragraph'); ?></p>
                         </div>
                         <div class="myth">
-                            <h2>Nyarlathotep</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
+                            <h2><?php the_field('2nd_m_header'); ?></h2>
+                            <p><?php the_field('2nd_m_paragraph'); ?></p>
                         </div>
                         <div class="myth">
-                            <h2>The Nameless City</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
+                            <h2><?php the_field('3rd_m_header'); ?></h2>
+                            <p><?php the_field('3rd_m_paragraph'); ?></p>
                         </div>
                         <div class="myth">
-                            <h2>Inhabitants of the Nameless City</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
+                            <h2><?php the_field('4th_m_header'); ?></h2>
+                            <p><?php the_field('4th_m_paragraph'); ?></p>
                         </div>
                         <div class="myth">
-                            <h2>Outer Gods</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
+                            <h2><?php the_field('5th_m_header'); ?></h2>
+                            <p><?php the_field('5th_m_paragraph'); ?></p>
                         </div>
                         <div class="myth">
-                            <h2>Lovecraftian works</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
+                            <h2><?php the_field('6th_m_header'); ?></h2>
+                            <p><?php the_field('6th_m_paragraph'); ?></p>
                         </div>
                     </div>
                 </div>
-            
-            
+
+
             </div>
 
 

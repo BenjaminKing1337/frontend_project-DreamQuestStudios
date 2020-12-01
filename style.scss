@@ -20,17 +20,23 @@ $sm: 576px;
 html {
     box-sizing: border-box;
     margin-top: 0 !important;
+    /* .resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    .resp-iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+        height: 85%;
+        border: 0;
+    }
 }
-/* general layout */
-div.container {
-    background: linear-gradient(to bottom right, $main 0%, #434343 100%);
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    min-height: 100vh;
+*/
 }
-
-/* background and font control */
+// Header, Nav & Footer
 body {
     padding: 0;
     margin: 0;
@@ -38,181 +44,189 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: $text;
-}
-a:link,
-a:visited {
-    color: $sub;
-    text-decoration: none;
-}
 
-p {
-    line-height: 1.65em;
-    padding: 0 0 1em 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-    font-weight: bold;
-}
+    /* general layout */
+    div.container {
+        background: linear-gradient(to bottom right, $main 0%, #434343 100%);
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: 100vh;
+    }
 
-/* header */
-.site-header {
-    border-bottom: 2px solid $line;
-    margin-bottom: 10px;
-    padding: 30px 0 0 0;
-}
+    /* background and font control */
 
-/* nav menu */
-#menuflex {
-    display: flex;
-    justify-content: center;
-}
-.site-nav {
-    display: flex;
-    justify-content: center;
-}
-.site-nav ul {
-    margin: 0;
-    padding: 0px;
-}
-.site-nav ul:before,
-.site-nav ul:after {
-    content: "";
-    display: table;
-}
-.site-nav ul:after {
-    clear: both;
-}
-.site-nav ul {
-    *zoom: 1;
-}
-.site-nav ul li {
-    list-style: none;
-    float: left;
-}
-.site-nav ul li a:link,
-.site-nav ul li a:visited {
-    display: block;
-}
+    a:link,
+    a:visited {
+        color: $sub;
+        text-decoration: none;
+    }
 
-/* site header menu */
-.newsNav {
-    padding: 0 !important;
-}
-body.home {
-    .newsVisited {
-        font-weight: 900;
-        background-color: $visited !important;
+    p {
+        line-height: 1.65em;
+        padding: 0 0 1em 0;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    /* header */
+    .site-header {
+        border-bottom: 2px solid $line;
+        margin-bottom: 10px;
+        padding: 30px 0 0 0;
+    }
+
+    /* nav menu */
+    #menuflex {
+        display: flex;
+        justify-content: center;
+    }
+    .site-nav {
+        display: flex;
+        justify-content: center;
+    }
+    .site-nav ul {
+        margin: 0;
+        padding: 0px;
+    }
+    .site-nav ul:before,
+    .site-nav ul:after {
+        content: "";
+        display: table;
+    }
+    .site-nav ul:after {
+        clear: both;
+    }
+    .site-nav ul {
+        *zoom: 1;
+    }
+    .site-nav ul li {
+        list-style: none;
+        float: left;
+    }
+    .site-nav ul li a:link,
+    .site-nav ul li a:visited {
+        display: block;
+    }
+
+    /* site header menu */
+    .newsNav {
+        padding: 0 !important;
+    }
+    body.home {
+        .newsVisited {
+            font-weight: 900;
+            background-color: $visited !important;
+            color: $main;
+        }
+    }
+    #menu-header-menu {
+        padding: 0;
+    }
+    .site-header nav {
+        margin-top: 30px;
+    }
+    .site-header nav ul li {
+        margin-right: 5px;
+        font-weight: 700;
+    }
+    .site-header nav ul li a:link,
+    .site-header nav ul li a:visited {
+        display: block;
+        padding: 5px 9px;
+        border: 1px solid $sub;
+    }
+    .site-header nav ul li a:hover {
+        background-color: #ececec;
+    }
+    .site-header nav ul li.current-menu-item a:link,
+    .site-header nav ul li.current-menu-item a:visited,
+    .site-header nav ul li.current-page-ancestor a:link,
+    .site-header nav ul li.current-page-ancestor a:visited {
+        background-color: $visited;
         color: $main;
     }
-}
-#menu-header-menu {
-    padding: 0;
-}
-.site-header nav {
-    margin-top: 30px;
-}
-.site-header nav ul li {
-    margin-right: 5px;
-    font-weight: 700;
-}
-.site-header nav ul li a:link,
-.site-header nav ul li a:visited {
-    display: block;
-    padding: 5px 9px;
-    border: 1px solid $sub;
-}
-.site-header nav ul li a:hover {
-    background-color: #ececec;
-}
-.site-header nav ul li.current-menu-item a:link,
-.site-header nav ul li.current-menu-item a:visited,
-.site-header nav ul li.current-page-ancestor a:link,
-.site-header nav ul li.current-page-ancestor a:visited {
-    background-color: $visited;
-    color: $main;
-}
 
-/* children links */
+    /* children links */
 
-.children-links {
-    font-size: 80%;
-}
-.children-links a:link,
-.children-links a:visited {
-    text-decoration: none;
-    padding-bottom: 2px;
-}
+    .children-links {
+        font-size: 80%;
+    }
+    .children-links a:link,
+    .children-links a:visited {
+        text-decoration: none;
+        padding-bottom: 2px;
+    }
 
-.children-links li {
-    padding: 5px 10px;
+    .children-links li {
+        padding: 5px 10px;
 
-    border: 1px solid $sub;
-}
-.children-links li:first-child {
-    margin-right: 20px;
-}
-.children-links .parent-link {
-    float: left;
-    margin-right: 20px;
-    padding-right: 20px;
-    border-right: 1px solid #ddd;
-    font-size: 120%;
-    font-weight: bold;
-}
-.children-links .parent-link a:link,
-.children-links .parent-link a:visited {
-    padding: 5px 10px;
-    border: 1px solid $sub;
-    color: $accent;
-}
-.children-links .current_page_item a:link,
-.children-links .current_page_item a:visited {
-    color: $accent;
-    cursor: default;
-}
+        border: 1px solid $sub;
+    }
+    .children-links li:first-child {
+        margin-right: 20px;
+    }
+    .children-links .parent-link {
+        float: left;
+        margin-right: 20px;
+        padding-right: 20px;
+        border-right: 1px solid #ddd;
+        font-size: 120%;
+        font-weight: bold;
+    }
+    .children-links .parent-link a:link,
+    .children-links .parent-link a:visited {
+        padding: 5px 10px;
+        border: 1px solid $sub;
+        color: $accent;
+    }
+    .children-links .current_page_item a:link,
+    .children-links .current_page_item a:visited {
+        color: $accent;
+        cursor: default;
+    }
 
-/* footer */
-#menu-footer-menu {
-    margin: 20px 0;
-}
-#menu-footer-menu .current_page_item a:link,
-#menu-footer-menu .current_page_item a:visited {
-    background: radial-gradient($accent, $main, $main);
-}
-.site-footer {
-    margin-top: 30px;
-    border-top: 2px solid $line;
-}
-.site-footer nav ul li:first-child {
-    margin-right: 10px;
-    padding-right: 10px;
-    border-right: 2px dotted $sub;
-}
+    /* footer */
+    #menu-footer-menu {
+        margin: 20px 0;
+    }
+    #menu-footer-menu .current_page_item a:link,
+    #menu-footer-menu .current_page_item a:visited {
+        background: radial-gradient($accent, $main, $main);
+    }
+    .site-footer {
+        margin-top: 30px;
+        border-top: 2px solid $line;
+    }
+    .site-footer nav ul li:first-child {
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 2px dotted $sub;
+    }
 
-#hCorrection {
-    margin-top: 40px;
-}
-.decorNone {
-    margin-block-end: 0;
-}
-#titleYear {
-    display: flex;
-    justify-content: center;
-    @media (min-width: $md) {
-        justify-content: flex-start !important;
+    #hCorrection {
+        margin-top: 40px;
+    }
+    .decorNone {
+        margin-block-end: 0;
+    }
+    #titleYear {
+        display: flex;
+        justify-content: center;
+        @media (min-width: $md) {
+            justify-content: flex-start !important;
+        }
     }
 }
 
-
-
-
 // HOME PAGE styles
-
 #elementOne {
     display: flex;
     flex-direction: column-reverse;
@@ -227,19 +241,22 @@ body.home {
         @media (min-width: $sm) {
             height: 250px;
             width: auto;
-        } 
+        }
         @media (min-width: $md) {
             height: 400px;
             width: auto;
         }
         @media (min-width: $lg) {
-            height: 600px;
+            height: 480px;
             width: auto;
-        }       
+        }
+        @media (min-width: $xl) {
+            height: 500px;
+            width: auto;
+        }
     }
     #elOneText {
         padding: 50px;
-        
 
         h2 {
             border-bottom: 2px solid $line;
@@ -257,73 +274,80 @@ body.home {
         justify-content: center;
         color: $sub;
     }
-    .embed-container { 
-        position: relative; 
-        padding-bottom: 56.25%;
-        overflow: hidden;
-        max-width: 100%;
-        height: auto;
-    } 
-    
-    .embed-container iframe,
-    .embed-container object,
-    .embed-container embed { 
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
-/* .resp-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
-    .resp-iframe {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 85%;
-        height: 85%;
-        border: 0;
-    }
-}
-*/
-
-// PROJECTS PAGE
-
-//XANTHOUS PAGE
-.content{
-    padding-top: 40px;
-    text-align: center;
-    h2{color: $sub;}
-    p{width: 60%; margin: 0 auto; padding: 25px 0;}
-
-    .content_box_mythos{
-        height: auto;
-        background-color: $box;
-        h2{padding: 5px 0 0 5px;}
-        p{width: 95%;}
-        @media (min-width: $lg){
-            text-align: start;
-            p{margin: 0; padding: 5px 0 0 5px;}
+    #video-container {
+        padding: 30px;
+        padding-top: 10px;
+        @media (min-width: $xl) {
+            padding: 120px;
+            padding-top: 10px;
+        }
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+            max-width: 100%;
+            height: auto;
         }
 
-        .mythos{
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+// PROJECTS PAGE styles
+
+//XANTHOUS PAGE
+.content {
+    padding-top: 40px;
+    text-align: center;
+    h2 {
+        color: $sub;
+    }
+    p {
+        width: 60%;
+        margin: 0 auto;
+        padding: 25px 0;
+    }
+
+    .content_box_mythos {
+        height: auto;
+        background-color: $box;
+        h2 {
+            padding: 5px 0 0 5px;
+        }
+        p {
+            width: 95%;
+        }
+        @media (min-width: $lg) {
+            text-align: start;
+            p {
+                margin: 0;
+                padding: 5px 0 0 5px;
+            }
+        }
+
+        .mythos {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 1rem;
             padding: 25px;
             margin: auto;
-            @media (max-width: $lg){
+            @media (max-width: $lg) {
                 grid-template-columns: repeat(2, 1fr);
             }
-            @media (max-width: $sm){
+            @media (max-width: $sm) {
                 grid-template-columns: repeat(1, 1fr);
             }
 
-            .myth{
+            .myth {
                 min-height: 220px;
                 width: 1fr;
                 max-width: 600px;
@@ -331,19 +355,27 @@ body.home {
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
-                h2{color: $accent; padding-bottom: 5px;}
-                p{
+                h2 {
+                    color: $accent;
+                    padding-bottom: 5px;
+                }
+                p {
                     visibility: hidden;
-                    opacity: 0; 
+                    opacity: 0;
                     transition: visibility 0s, opacity 0.5s linear;
                 }
-                &:hover{
-                    h2{visibility: hidden; opacity: 0;}
-                    p{visibility: visible; opacity: 1;}
+                &:hover {
+                    h2 {
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                    p {
+                        visibility: visible;
+                        opacity: 1;
+                    }
                     align-items: center;
                 }
             }
         }
     }
-    
 }
