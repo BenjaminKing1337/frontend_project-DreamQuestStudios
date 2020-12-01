@@ -30,7 +30,7 @@ get_header(); ?>
             <div id="xElementOne">
                 <div id="xElOneText">
                     <h2>Xanthous is coming!</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet vehicula est ut rhoncus. Mauris hendrerit posuere neque a hendrerit. Nulla id lacus at elit dapibus auctor at a erat. Mauris sapien augue, lobortis eu enim in, viverra tempus risus. Duis ornare sapien lacinia tellus vestibulum blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent commodo sagittis elit ac ultrices. Cras at purus eros. Mauris fermentum pellentesque congue. Sed nec magna nec libero vehicula venenatis. Ut diam felis, iaculis eu maximus et, tristique ac ipsum. Morbi mi est, porttitor non aliquam et, imperdiet lobortis libero. Aenean eu lectus id quam euismod venenatis ac consequat odio. Etiam a purus a justo tincidunt aliquet et ac nisi.</p>
+                    <p>A mysterious note has been recovered at the library of Miskatonic University in New England. As the head librarian you take the investigation upon yourself and venture out to where the note tells you of an unfinished ritual awaiting completion, in a small place called Newbury...</p>
                 </div>
                 <img src="<?php echo 'get_template_directory_uri'(); ?>/assets/logoblack.png" height="400px" width="auto" />
 
