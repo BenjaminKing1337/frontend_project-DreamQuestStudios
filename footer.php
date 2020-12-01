@@ -14,9 +14,10 @@
     </nav>
 
     <!-- displays title of site, copyright symbol and year -->
+    <div id="titleYear">
     <p class="decorNone">
         <?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?>
-    </p>
+    </p></div>
 
 </footer>
 </div>
