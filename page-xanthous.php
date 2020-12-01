@@ -28,16 +28,43 @@ get_header(); ?>
                 </nav>
             <?php } ?>
             <!-- splitting layout of this specific page into columns -->
-            <div class="column-container clearfix">
-                <!-- Title column -->
-                <div class="title-column">
-                    <h2><?php the_title(); ?></h2>
-                </div>
-                <!-- The content column -->
-                <div class="text-column">
-                    <?php the_content(); ?>
-                </div>
+            <div class="content">
+                <h2>Inspiration</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit. </p>
+                        
+                <div class="content_box_mythos">
+                    <h2>Relevant Mythos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
 
+                    <div class="mythos">
+                        <div class="myth">
+                            <h2>Azathoth</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
+                        </div>
+                        <div class="myth">
+                            <h2>Nyarlathotep</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
+                        </div>
+                        <div class="myth">
+                            <h2>The Nameless City</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
+                        </div>
+                        <div class="myth">
+                            <h2>Inhabitants of the Nameless City</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
+                        </div>
+                        <div class="myth">
+                            <h2>Outer Gods</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
+                        </div>
+                        <div class="myth">
+                            <h2>Lovecraftian works</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit.</p>
+                        </div>
+                    </div>
+                </div>
+            
+            
             </div>
 
 

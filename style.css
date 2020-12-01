@@ -184,8 +184,7 @@ body.home .newsVisited {
 
 .children-links .current_page_item a:link,
 .children-links .current_page_item a:visited {
-  color: #53bba9;
-  background: radial-gradient(#e6f512, #000000, #000000);
+  color: #e6f512;
   cursor: default;
 }
 
@@ -212,6 +211,11 @@ body.home .newsVisited {
 
 #hCorrection {
   margin-top: 40px;
+}
+
+.decorNone {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
 
 #elementOne {
@@ -270,5 +274,111 @@ body.home .newsVisited {
   width: 85%;
   height: 85%;
   border: 0;
+}
+
+.content {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.content h2 {
+  color: #53bba9;
+}
+
+.content p {
+  width: 60%;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+.content .content_box_mythos {
+  height: auto;
+  background-color: #948c8c27;
+}
+
+.content .content_box_mythos h2 {
+  padding: 5px 0 0 5px;
+}
+
+.content .content_box_mythos p {
+  width: 95%;
+}
+
+@media (min-width: 992px) {
+  .content .content_box_mythos {
+    text-align: start;
+  }
+  .content .content_box_mythos p {
+    margin: 0;
+    padding: 5px 0 0 5px;
+  }
+}
+
+.content .content_box_mythos .mythos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 25px;
+  margin: auto;
+}
+
+@media (max-width: 992px) {
+  .content .content_box_mythos .mythos {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .content .content_box_mythos .mythos {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.content .content_box_mythos .mythos .myth {
+  min-height: 220px;
+  width: 1fr;
+  max-width: 600px;
+  border: 1px solid #53bba9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .content_box_mythos .mythos .myth h2 {
+  color: #e6f512;
+  padding-bottom: 5px;
+}
+
+.content .content_box_mythos .mythos .myth p {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content .content_box_mythos .mythos .myth:hover {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .content_box_mythos .mythos .myth:hover h2 {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.content .content_box_mythos .mythos .myth:hover p {
+  visibility: visible;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

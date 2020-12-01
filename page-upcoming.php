@@ -29,10 +29,7 @@ get_header(); ?>
             <?php } ?>
             <!-- splitting layout of this specific page into columns -->
             <div class="column-container clearfix">
-                <!-- Title column -->
-                <div class="title-column">
-                    <h2><?php the_title(); ?></h2>
-                </div>
+
                 <!-- The content column -->
                 <div class="text-column">
                     <?php the_content(); ?>

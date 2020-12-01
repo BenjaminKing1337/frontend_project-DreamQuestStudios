@@ -27,16 +27,12 @@ get_header(); ?>
                     </ul>
                 </nav>
             <?php } ?>
-            <!-- splitting layout of this specific page into columns -->
-            <div class="column-container clearfix">
-                <!-- Title column -->
-                <div class="title-column">
-                    <h2><?php the_title(); ?></h2>
+            <div id="elementOne">
+                <div id="elOneText">
+                    <h2>Xanthous is coming!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet vehicula est ut rhoncus. Mauris hendrerit posuere neque a hendrerit. Nulla id lacus at elit dapibus auctor at a erat. Mauris sapien augue, lobortis eu enim in, viverra tempus risus. Duis ornare sapien lacinia tellus vestibulum blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent commodo sagittis elit ac ultrices. Cras at purus eros. Mauris fermentum pellentesque congue. Sed nec magna nec libero vehicula venenatis. Ut diam felis, iaculis eu maximus et, tristique ac ipsum. Morbi mi est, porttitor non aliquam et, imperdiet lobortis libero. Aenean eu lectus id quam euismod venenatis ac consequat odio. Etiam a purus a justo tincidunt aliquet et ac nisi.</p>
                 </div>
-                <!-- The content column -->
-                <div class="text-column">
-                    <?php the_content(); ?>
-                </div>
+                <img src="<?php echo 'get_template_directory_uri'(); ?>/assets/logoblack.png" height="400px" width="auto" />
 
             </div>
 
