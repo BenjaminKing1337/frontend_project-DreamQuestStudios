@@ -55,13 +55,11 @@ body {
     }
 
     /* background and font control */
-
     a:link,
     a:visited {
         color: $sub;
         text-decoration: none;
     }
-
     p {
         line-height: 1.65em;
         padding: 0 0 1em 0;
@@ -75,14 +73,12 @@ body {
         margin: 0;
         font-weight: bold;
     }
-
     /* header */
     .site-header {
         border-bottom: 2px solid $line;
         margin-bottom: 10px;
         padding: 30px 0 0 0;
     }
-
     /* nav menu */
     #menuflex {
         display: flex;
@@ -199,7 +195,7 @@ body {
     }
     #menu-footer-menu .current_page_item a:link,
     #menu-footer-menu .current_page_item a:visited {
-        background: radial-gradient($accent, $main, $main);
+        color: $accent;
     }
     .site-footer {
         margin-top: 30px;

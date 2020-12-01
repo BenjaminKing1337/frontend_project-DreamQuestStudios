@@ -211,7 +211,7 @@ body #menu-footer-menu {
 
 body #menu-footer-menu .current_page_item a:link,
 body #menu-footer-menu .current_page_item a:visited {
-  background: radial-gradient(#e6f512, #000000, #000000);
+  color: #e6f512;
 }
 
 body .site-footer {
