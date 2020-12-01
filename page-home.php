@@ -17,14 +17,15 @@ get_header(); ?>
                     <img src="<?php the_field('1st_img'); ?>" />
                 <?php endif; ?>
             </div>
-
+            <br>
             <div id="elementTwo">
                 <div id="elTwoText">
                     <h2><?php the_field('2nd_header'); ?></h2>
                 </div>
-
-                <div class="embed-container">
-                    <?php the_field('video'); ?>
+                <div id="video-container">
+                    <div class="embed-container">
+                        <?php the_field('video'); ?>
+                    </div>
                 </div>
 
             </div>
