@@ -440,9 +440,15 @@ body #titleYear {
   padding: 5px 0 0 5px;
 }
 
+<<<<<<< HEAD
 .content .content_box_mythos #content-text p {
   width: 60%;
   margin: 0 auto;
+=======
+.content .content_box_mythos p {
+  width: 95%;
+  padding: 5px 0 0 5px;
+>>>>>>> 3cb7d2625d57ea8c4b526ab02cc06a6ff8159b2a
 }
 
 @media (min-width: 992px) {
