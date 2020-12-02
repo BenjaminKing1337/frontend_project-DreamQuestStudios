@@ -357,7 +357,6 @@ body {
     .content_box_mythos {
         height: auto;
         background-color: $box;
-<<<<<<< HEAD
         #content-text {
             text-align: center;
             h2 {
@@ -367,14 +366,6 @@ body {
                 width: 60%;
                 margin: 0 auto;
             }
-=======
-        h2 {
-            padding: 5px 0 0 5px;
-        }
-        p {
-            width: 95%;
-            padding: 5px 0 0 5px;
->>>>>>> 3cb7d2625d57ea8c4b526ab02cc06a6ff8159b2a
         }
         @media (min-width: $lg) {
             text-align: start;
