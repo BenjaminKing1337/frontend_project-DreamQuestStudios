@@ -28,8 +28,6 @@ get_header(); ?>
                     </ul>
                 </nav>
             <?php } ?>
-
-
            
             <!-- the page content -->
             <?php the_content(); ?>
