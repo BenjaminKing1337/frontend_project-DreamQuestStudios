@@ -251,6 +251,53 @@ body #titleYear {
   }
 }
 
+.post .title {
+  color: #e6f512;
+  font-size: 60px;
+}
+
+#newsflash {
+  width: 30%;
+  float: right;
+  margin: 0 0 30px 30px;
+  padding: 20px;
+  background-color: #000000;
+  border: #e6f512 1px outset;
+}
+
+#newsflash h4 {
+  margin-bottom: 6px;
+}
+
+#newsflash p {
+  font-size: 85%;
+}
+
+.news {
+  padding: 30px;
+  background-color: #948c8c27;
+  border-radius: 5px;
+}
+
+.news #news {
+  margin: 15px;
+  border-bottom: 2px solid #434343;
+}
+
+.news #news h2 {
+  padding: 20px;
+}
+
+.news #news p {
+  padding: 30px;
+  background-color: #948c8c27;
+  border-radius: 5px;
+}
+
+.news #news:last-of-type {
+  border-bottom: none;
+}
+
 #elementOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,12 +432,17 @@ body #titleYear {
   background-color: #948c8c27;
 }
 
-.content .content_box_mythos h2 {
+.content .content_box_mythos #content-text {
+  text-align: center;
+}
+
+.content .content_box_mythos #content-text h2 {
   padding: 5px 0 0 5px;
 }
 
-.content .content_box_mythos p {
-  width: 95%;
+.content .content_box_mythos #content-text p {
+  width: 60%;
+  margin: 0 auto;
 }
 
 @media (min-width: 992px) {
@@ -441,7 +493,6 @@ body #titleYear {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("https://ksr-ugc.imgix.net/assets/026/598/698/9fa2af8cd6da9a25e6a1a73f1d5d1c9b_original.jpg?ixlib=rb-2.1.0&crop=faces&w=1552&h=873&fit=crop&v=1569379860&auto=format&frame=1&q=92&s=a019e547dad832795a4bc56ad5f1e1be");
   background-size: 100% 100%;
   overflow: hidden;
 }
@@ -452,8 +503,8 @@ body #titleYear {
   color: #e6f512;
   padding: 5px;
   position: absolute;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .content .content_box_mythos .mythos .myth p {
@@ -463,8 +514,8 @@ body #titleYear {
   opacity: 0;
   -webkit-transform: translateY(300px);
           transform: translateY(300px);
-  -webkit-transition: .7s;
-  transition: .7s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   margin: auto 0;
   padding: 5px;
 }

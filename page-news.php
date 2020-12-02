@@ -2,13 +2,20 @@
 
 get_header(); ?>
 
+
+
 <!-- The post loop -->
 <?php if (have_posts()) :
     while (have_posts()) : the_post(); ?>
 
+
+
         <article class="post page" id="hCorrection">
             <!-- splitting layout of this specific page into columns -->
+               
+
             <div class="column-container clearfix">
+                
                 <!-- Title column -->
                 <div class="title-column">
                     <h2><?php the_title(); ?></h2>
