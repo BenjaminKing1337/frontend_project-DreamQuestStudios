@@ -391,6 +391,7 @@ body #titleYear {
 
 .content .content_box_mythos p {
   width: 95%;
+  padding: 5px 0 0 5px;
 }
 
 @media (min-width: 992px) {
