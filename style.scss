@@ -122,6 +122,9 @@ body {
         border-left: 3px solid $sub;
         overflow: hidden;
     }
+    .post.page {
+        padding-top: 0 !important;
+    }
 
     /* background and font control */
     a:link,
@@ -534,6 +537,25 @@ body {
             }
         }
     }
+    /* .proj.children-links  {
+        display: flex;
+        list-style-type: none;
+        & li {
+            border: solid $sub 2px !important;
+            & :hover {
+                background-color: $text;
+            }
+            & :last-child {
+                visibility: hidden;
+            }
+        }
+        & a {
+            color: transparent;
+            
+        }
+        
+    } */
+    
 }
 
 //XANTHOUS PAGE styles

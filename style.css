@@ -175,6 +175,10 @@ body div.container {
   overflow: hidden;
 }
 
+body .post.page {
+  padding-top: 0 !important;
+}
+
 body a:link,
 body a:visited {
   color: #53bba9;
@@ -679,6 +683,27 @@ body #elementTwo #video-container .embed-container embed {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+body {
+  /* .proj.children-links  {
+        display: flex;
+        list-style-type: none;
+        & li {
+            border: solid $sub 2px !important;
+            & :hover {
+                background-color: $text;
+            }
+            & :last-child {
+                visibility: hidden;
+            }
+        }
+        & a {
+            color: transparent;
+            
+        }
+        
+    } */
 }
 
 body #xElementOne #xElOneText {

@@ -36,8 +36,9 @@ get_header(); ?>
                     <img src="<?php the_field('1st_img'); ?>" />
                 <?php endif; ?>
             </div>
-
-
+            <!-- <div class="proj children-links clearfix">
+                <?php wp_list_pages($args); ?>
+            </div> -->
         </article>
 <?php endwhile;
 
