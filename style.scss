@@ -589,22 +589,22 @@ body {
                 grid-template-columns: repeat(1, 1fr);
             }
             #myth1 {
-                animation: slideInFromBot 2s ease-out;
+                animation: slideInFromBot 1.2s ease-out;
             }
             #myth2 {
-                animation: slideInFromBot 2.3s ease-out;
+                animation: slideInFromBot 1.3s ease-out;
             }
             #myth3 {
-                animation: slideInFromBot 2.7s ease-out;
+                animation: slideInFromBot 1.4s ease-out;
             }
             #myth4 {
-                animation: slideInFromBot 3s ease-out;
+                animation: slideInFromBot 1.5s ease-out;
             }
             #myth5 {
-                animation: slideInFromBot 3.3s ease-out;
+                animation: slideInFromBot 1.6s ease-out;
             }
             #myth6 {
-                animation: slideInFromBot 3.7s ease-out;
+                animation: slideInFromBot 1.7s ease-out;
             }
             .myth {
                 min-height: 220px;
@@ -651,7 +651,7 @@ body {
         }
     }
 }
-// Upcoming
+// UPCOMING PAGE styles
 .upcoming{
     h2{color: $sub; margin-top: 40px;}
     text-align: center;
@@ -692,7 +692,7 @@ body {
 }
 
 
-// ABOUT US PAGE
+// ABOUT US PAGE styles
 .about {
     text-align: center;
     h2 {
