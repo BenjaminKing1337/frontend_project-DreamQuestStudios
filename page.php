@@ -28,7 +28,9 @@ get_header(); ?>
                     </ul>
                 </nav>
             <?php } ?>
-           
+            <?php if (get_field('bg_img', 12)) : ?>
+            <div style="background-image: url('<?php the_field('bg_img', 12); ?>')">
+            <?php endif; ?>
             <!-- the page content -->
             <?php the_content(); ?>
         </article>

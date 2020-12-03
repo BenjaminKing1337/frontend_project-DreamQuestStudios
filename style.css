@@ -39,11 +39,12 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: whitesmoke;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, right bottom, from(#000000), to(#434343));
+  background: linear-gradient(to bottom right, #000000 0%, #434343 100%);
   /* general layout */
   /* background and font control */
   /* header */
@@ -189,6 +190,10 @@ body .children-links a:link,
 body .children-links a:visited {
   text-decoration: none;
   padding-bottom: 2px;
+}
+
+body .children-links li:hover {
+  background-color: #ececec;
 }
 
 body .children-links li {
@@ -448,6 +453,7 @@ body #titleYear {
 .content .content_box_mythos {
   height: auto;
   background-color: #948c8c27;
+  border-radius: 5px;
 }
 
 .content .content_box_mythos #content-text {
@@ -649,6 +655,7 @@ body #titleYear {
 }
 
 .firefly {
+body .firefly {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -660,8 +667,8 @@ body #titleYear {
   pointer-events: none;
 }
 
-.firefly::before,
-.firefly::after {
+body .firefly::before,
+body .firefly::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -671,14 +678,14 @@ body #titleYear {
           transform-origin: -10vw;
 }
 
-.firefly::before {
+body .firefly::before {
   background: black;
   opacity: 0.4;
   -webkit-animation: drift ease alternate infinite;
           animation: drift ease alternate infinite;
 }
 
-.firefly::after {
+body .firefly::after {
   background: white;
   opacity: 0;
   -webkit-box-shadow: 0 0 0vw 0vw #e6f512;
@@ -687,17 +694,17 @@ body #titleYear {
           animation: drift ease alternate infinite, flash ease infinite;
 }
 
-.firefly:nth-child(1) {
+body .firefly:nth-child(1) {
   -webkit-animation-name: move1;
           animation-name: move1;
 }
 
-.firefly:nth-child(1)::before {
+body .firefly:nth-child(1)::before {
   -webkit-animation-duration: 17s;
           animation-duration: 17s;
 }
 
-.firefly:nth-child(1)::after {
+body .firefly:nth-child(1)::after {
   -webkit-animation-duration: 17s, 7986ms;
           animation-duration: 17s, 7986ms;
   -webkit-animation-delay: 0ms, 5139ms;
@@ -870,17 +877,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(2) {
+body .firefly:nth-child(2) {
   -webkit-animation-name: move2;
           animation-name: move2;
 }
 
-.firefly:nth-child(2)::before {
+body .firefly:nth-child(2)::before {
   -webkit-animation-duration: 14s;
           animation-duration: 14s;
 }
 
-.firefly:nth-child(2)::after {
+body .firefly:nth-child(2)::after {
   -webkit-animation-duration: 14s, 5678ms;
           animation-duration: 14s, 5678ms;
   -webkit-animation-delay: 0ms, 2791ms;
@@ -1125,17 +1132,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(3) {
+body .firefly:nth-child(3) {
   -webkit-animation-name: move3;
           animation-name: move3;
 }
 
-.firefly:nth-child(3)::before {
+body .firefly:nth-child(3)::before {
   -webkit-animation-duration: 12s;
           animation-duration: 12s;
 }
 
-.firefly:nth-child(3)::after {
+body .firefly:nth-child(3)::after {
   -webkit-animation-duration: 12s, 7041ms;
           animation-duration: 12s, 7041ms;
   -webkit-animation-delay: 0ms, 1409ms;
@@ -1332,17 +1339,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(4) {
+body .firefly:nth-child(4) {
   -webkit-animation-name: move4;
           animation-name: move4;
 }
 
-.firefly:nth-child(4)::before {
+body .firefly:nth-child(4)::before {
   -webkit-animation-duration: 15s;
           animation-duration: 15s;
 }
 
-.firefly:nth-child(4)::after {
+body .firefly:nth-child(4)::after {
   -webkit-animation-duration: 15s, 7863ms;
           animation-duration: 15s, 7863ms;
   -webkit-animation-delay: 0ms, 7955ms;
@@ -1547,17 +1554,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(5) {
+body .firefly:nth-child(5) {
   -webkit-animation-name: move5;
           animation-name: move5;
 }
 
-.firefly:nth-child(5)::before {
+body .firefly:nth-child(5)::before {
   -webkit-animation-duration: 13s;
           animation-duration: 13s;
 }
 
-.firefly:nth-child(5)::after {
+body .firefly:nth-child(5)::after {
   -webkit-animation-duration: 13s, 9515ms;
           animation-duration: 13s, 9515ms;
   -webkit-animation-delay: 0ms, 3539ms;
@@ -1802,17 +1809,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(6) {
+body .firefly:nth-child(6) {
   -webkit-animation-name: move6;
           animation-name: move6;
 }
 
-.firefly:nth-child(6)::before {
+body .firefly:nth-child(6)::before {
   -webkit-animation-duration: 12s;
           animation-duration: 12s;
 }
 
-.firefly:nth-child(6)::after {
+body .firefly:nth-child(6)::after {
   -webkit-animation-duration: 12s, 5805ms;
           animation-duration: 12s, 5805ms;
   -webkit-animation-delay: 0ms, 2570ms;
@@ -1977,17 +1984,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(7) {
+body .firefly:nth-child(7) {
   -webkit-animation-name: move7;
           animation-name: move7;
 }
 
-.firefly:nth-child(7)::before {
+body .firefly:nth-child(7)::before {
   -webkit-animation-duration: 9s;
           animation-duration: 9s;
 }
 
-.firefly:nth-child(7)::after {
+body .firefly:nth-child(7)::after {
   -webkit-animation-duration: 9s, 7783ms;
           animation-duration: 9s, 7783ms;
   -webkit-animation-delay: 0ms, 5964ms;
@@ -2152,17 +2159,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(8) {
+body .firefly:nth-child(8) {
   -webkit-animation-name: move8;
           animation-name: move8;
 }
 
-.firefly:nth-child(8)::before {
+body .firefly:nth-child(8)::before {
   -webkit-animation-duration: 14s;
           animation-duration: 14s;
 }
 
-.firefly:nth-child(8)::after {
+body .firefly:nth-child(8)::after {
   -webkit-animation-duration: 14s, 9199ms;
           animation-duration: 14s, 9199ms;
   -webkit-animation-delay: 0ms, 8343ms;
@@ -2407,17 +2414,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(9) {
+body .firefly:nth-child(9) {
   -webkit-animation-name: move9;
           animation-name: move9;
 }
 
-.firefly:nth-child(9)::before {
+body .firefly:nth-child(9)::before {
   -webkit-animation-duration: 14s;
           animation-duration: 14s;
 }
 
-.firefly:nth-child(9)::after {
+body .firefly:nth-child(9)::after {
   -webkit-animation-duration: 14s, 10558ms;
           animation-duration: 14s, 10558ms;
   -webkit-animation-delay: 0ms, 8048ms;
@@ -2646,17 +2653,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(10) {
+body .firefly:nth-child(10) {
   -webkit-animation-name: move10;
           animation-name: move10;
 }
 
-.firefly:nth-child(10)::before {
+body .firefly:nth-child(10)::before {
   -webkit-animation-duration: 17s;
           animation-duration: 17s;
 }
 
-.firefly:nth-child(10)::after {
+body .firefly:nth-child(10)::after {
   -webkit-animation-duration: 17s, 10153ms;
           animation-duration: 17s, 10153ms;
   -webkit-animation-delay: 0ms, 2104ms;
@@ -2877,17 +2884,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(11) {
+body .firefly:nth-child(11) {
   -webkit-animation-name: move11;
           animation-name: move11;
 }
 
-.firefly:nth-child(11)::before {
+body .firefly:nth-child(11)::before {
   -webkit-animation-duration: 15s;
           animation-duration: 15s;
 }
 
-.firefly:nth-child(11)::after {
+body .firefly:nth-child(11)::after {
   -webkit-animation-duration: 15s, 6300ms;
           animation-duration: 15s, 6300ms;
   -webkit-animation-delay: 0ms, 3347ms;
@@ -3076,17 +3083,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(12) {
+body .firefly:nth-child(12) {
   -webkit-animation-name: move12;
           animation-name: move12;
 }
 
-.firefly:nth-child(12)::before {
+body .firefly:nth-child(12)::before {
   -webkit-animation-duration: 14s;
           animation-duration: 14s;
 }
 
-.firefly:nth-child(12)::after {
+body .firefly:nth-child(12)::after {
   -webkit-animation-duration: 14s, 9600ms;
           animation-duration: 14s, 9600ms;
   -webkit-animation-delay: 0ms, 4646ms;
@@ -3283,17 +3290,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(13) {
+body .firefly:nth-child(13) {
   -webkit-animation-name: move13;
           animation-name: move13;
 }
 
-.firefly:nth-child(13)::before {
+body .firefly:nth-child(13)::before {
   -webkit-animation-duration: 18s;
           animation-duration: 18s;
 }
 
-.firefly:nth-child(13)::after {
+body .firefly:nth-child(13)::after {
   -webkit-animation-duration: 18s, 9982ms;
           animation-duration: 18s, 9982ms;
   -webkit-animation-delay: 0ms, 2549ms;
@@ -3450,17 +3457,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(14) {
+body .firefly:nth-child(14) {
   -webkit-animation-name: move14;
           animation-name: move14;
 }
 
-.firefly:nth-child(14)::before {
+body .firefly:nth-child(14)::before {
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
 }
 
-.firefly:nth-child(14)::after {
+body .firefly:nth-child(14)::after {
   -webkit-animation-duration: 10s, 9300ms;
           animation-duration: 10s, 9300ms;
   -webkit-animation-delay: 0ms, 3811ms;
@@ -3641,17 +3648,17 @@ body #titleYear {
   }
 }
 
-.firefly:nth-child(15) {
+body .firefly:nth-child(15) {
   -webkit-animation-name: move15;
           animation-name: move15;
 }
 
-.firefly:nth-child(15)::before {
+body .firefly:nth-child(15)::before {
   -webkit-animation-duration: 17s;
           animation-duration: 17s;
 }
 
-.firefly:nth-child(15)::after {
+body .firefly:nth-child(15)::after {
   -webkit-animation-duration: 17s, 8550ms;
           animation-duration: 17s, 8550ms;
   -webkit-animation-delay: 0ms, 4043ms;

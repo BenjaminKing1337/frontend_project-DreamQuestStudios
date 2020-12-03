@@ -2,6 +2,7 @@
 
 
 <div class="news">
+
     <!-- See newer/older posts -->
     <div class="older-posts">
         <?php previous_posts_link("Older Posts") ?>
