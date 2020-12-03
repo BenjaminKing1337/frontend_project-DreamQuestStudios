@@ -120,6 +120,7 @@ body {
         min-height: 100vh;
         border-right: 3px solid $sub;
         border-left: 3px solid $sub;
+        overflow: hidden;
     }
 
     /* background and font control */
@@ -304,7 +305,7 @@ body {
         border-bottom: $line 2px solid;
         animation: appear 0.3s ease-out;
         @media (max-width: $md) {
-           font-size: 40px;
+            font-size: 40px;
         }
     }
     .post-meta {
@@ -420,7 +421,6 @@ body {
         animation: move-twink-back 200s linear infinite;
         z-index: -1;
     }
-    
 }
 
 // HOME PAGE styles
@@ -509,6 +509,31 @@ body {
 
 //PROJECTS PAGE styles
 body {
+    #xElementOne {
+        #xElOneText {
+            padding: 30px;
+        }
+        img {
+            border: 3px solid $sub;
+            height: 150px;
+            @media (min-width: $sm) {
+                height: 250px;
+                width: auto;
+            }
+            @media (min-width: $md) {
+                height: 400px;
+                width: auto;
+            }
+            @media (min-width: $lg) {
+                height: 480px;
+                width: auto;
+            }
+            @media (min-width: $xl) {
+                height: 400px;
+                width: auto;
+            }
+        }
+    }
 }
 
 //XANTHOUS PAGE styles
@@ -563,7 +588,24 @@ body {
             @media (max-width: $sm) {
                 grid-template-columns: repeat(1, 1fr);
             }
-
+            #myth1 {
+                animation: slideInFromBot 2s ease-out;
+            }
+            #myth2 {
+                animation: slideInFromBot 2.3s ease-out;
+            }
+            #myth3 {
+                animation: slideInFromBot 2.7s ease-out;
+            }
+            #myth4 {
+                animation: slideInFromBot 3s ease-out;
+            }
+            #myth5 {
+                animation: slideInFromBot 3.3s ease-out;
+            }
+            #myth6 {
+                animation: slideInFromBot 3.7s ease-out;
+            }
             .myth {
                 min-height: 220px;
                 width: 1fr;
@@ -610,10 +652,13 @@ body {
 }
 
 // ABOUT US PAGE
-.about{
+.about {
     text-align: center;
-    h2{color: $sub; padding-bottom: 45px;}
-    .cards{
+    h2 {
+        color: $sub;
+        padding-bottom: 45px;
+    }
+    .cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
@@ -625,20 +670,20 @@ body {
         @media (max-width: $md) {
             grid-template-columns: repeat(1, 1fr);
         }
-        .card{
+        .card {
             min-height: 500px;
             width: 1fr;
             max-width: 600px;
             @media (max-width: $md) {
-                padding:15px 90px;
+                padding: 15px 90px;
             }
             @media (max-width: $sm) {
-                padding:15px 25px;
+                padding: 15px 25px;
             }
             border: 1px solid $sub;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             text-align: start;
             background-size: 100% 100%;
             overflow: hidden;
@@ -646,91 +691,33 @@ body {
             border-radius: 25px;
             padding: 15px;
             transition: 1s;
-            &:hover{
+            &:hover {
                 transform: translateY(-15px);
             }
-            .img{
+            .img {
                 height: 200px;
                 width: 100%;
                 background-image: url("https://images.jfmedier.dk/images/2/23/234/23432202-afae-4640-9151-7bd95bc7766b_6_90_0_0_800_532_880_585_5e4c06bf.jpg");
                 background-size: 100% 100%;
                 border-radius: 15px 15px 15px 0;
             }
-            h2{color: $accent; padding: 10px 0 0 0;}
-        }
-        .card:nth-child(2){
-            .img{
-                background-image: url("https://boundingintocomics.com/wp-content/uploads/2020/06/2020.06.03-07.37-boundingintocomics-5ed7fbfa4e148.png");
+            h2 {
+                color: $accent !important;
+                padding: 10px 0 0 0;
             }
         }
-        .card:last-child{
-            .img{
-                background-image: url("https://www.abc.net.au/news/image/954416-3x2-940x627.jpg");
-            }
+        #card1 {
+            animation: slideInFromLeft 0.7s ease-out;
+        }
+        #card2 {
+            animation: slideInFromBot 0.7s ease-out;
+        }
+        #card3 {
+            animation: slideInFromRight 0.7s ease-out;
         }
     }
 }
 
-
-
-// PARTICLE EFFECT
-.firefly {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    width: 0.4vw;
-    height: 0.4vw;
-    margin: -0.2vw 0 0 9.8vw;
-    animation: ease 200s alternate infinite;
-    pointer-events: none;
-}
-.firefly::before,
-.firefly::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transform-origin: -10vw;
-}
-.firefly::before {
-    background: black;
-    opacity: 0.4;
-    animation: drift ease alternate infinite;
-}
-.firefly::after {
-    background: white;
-    opacity: 0;
-    box-shadow: 0 0 0vw 0vw $accent;
-    animation: drift ease alternate infinite, flash ease infinite;
-}
-
-.firefly:nth-child(1) {
-    animation-name: move1;
-}
-.firefly:nth-child(1)::before {
-    animation-duration: 17s;
-}
-.firefly:nth-child(1)::after {
-    animation-duration: 17s, 7986ms;
-    animation-delay: 0ms, 5139ms;
-}
-
-@keyframes move1 {
-    0% {
-        transform: translateX(-18vw) translateY(-9vh) scale(0.65);
-    }
-    5.2631578947% {
-        transform: translateX(-41vw) translateY(2vh) scale(0.52);
-    }
-    10.5263157895% {
-        transform: translateX(0vw) translateY(-14vh) scale(0.83);
-    }
-    15.7894736842% {
-        transform: translateX(44vw) translateY(19vh) scale(0.76);
-    }
-    21.0526315789% {
-        transform: translateX(-8vw) translateY(13vh) scale(0.82);
 // FIREFLY ANIMATION
 body {
     .firefly {
@@ -2022,11 +2009,11 @@ body {
         30%,
         100% {
             opacity: 0;
-            box-shadow: 0 0 0vw 0vw yellow;
+            box-shadow: 0 0 0vw 0vw $accent;
         }
         5% {
             opacity: 1;
-            box-shadow: 0 0 2vw 0.4vw yellow;
+            box-shadow: 0 0 2vw 0.4vw $accent;
         }
     }
 }

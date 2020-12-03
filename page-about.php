@@ -7,26 +7,41 @@ get_header(); ?>
     while (have_posts()) : the_post(); ?>
 
         <article class="post page" id="hCorrection">
-           <div class="about">
-                <h2>Who are Dream Quest Studios?</h2>
+            <div class="about">
+                <h2><?php the_field('about_header'); ?></h2>
                 <div class="cards">
-                    <div class="card">
-                        <div class="img"></div>
-                        <h2>The Beginnings</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit. Donec auctor libero efficitur consequat iaculis. Quisque augue velit, aliquet id metus vitae, volutpat porta urna. Vivamus lobortis </p>
-                    </div>
-                    <div class="card">
-                    <div class="img"></div>
-                        <h2>First Game Finished</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit. Donec auctor libero efficitur consequat iaculis. Quisque augue velit, aliquet id metus vitae, volutpat porta urna. Vivamus lobortis </p>
-                    </div>
-                    <div class="card">
-                    <div class="img"></div>
-                        <h2>What's Next?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit. Donec auctor libero efficitur consequat iaculis. Quisque augue velit, aliquet id metus vitae, volutpat porta urna. Vivamus lobortis </p>
-                    </div>
+
+                        
+                        <div class="card" id="card1">
+                       
+                        <?php if (get_field('1st_img')) : ?>
+                        <div class="img" style="background-image: url('<?php the_field('1st_img'); ?>')"></div>
+                        <?php endif; ?>
+                        <h2><?php the_field('1st_header'); ?></h2>
+                        <p><?php the_field('1st_paragraph'); ?></p>
+                        </div>
+                        
+                        
+                        <div class="card" id="card2">
+                        
+                        <?php if (get_field('2nd_img')) : ?>
+                        <div class="img" style="background-image: url('<?php the_field('2nd_img'); ?>')"></div>
+                        <?php endif; ?>
+                        <h2><?php the_field('2nd_header'); ?></h2>
+                        <p><?php the_field('2nd_paragraph'); ?></p>
+                        </div>
+                            
+                        
+                        <div class="card" id="card3">
+                      
+                        <?php if (get_field('3rd_img')) : ?>
+                        <div class="img" style="background-image: url('<?php the_field('3rd_img'); ?>')"></div>
+                        <?php endif; ?>
+                        <h2><?php the_field('3rd_header'); ?></h2>
+                        <p><?php the_field('3rd_paragraph'); ?></p>
+                        </div>
                 </div>
-           </div>
+            </div>
         </article>
 <?php endwhile;
 

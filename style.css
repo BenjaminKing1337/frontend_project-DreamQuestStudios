@@ -172,6 +172,7 @@ body div.container {
   min-height: 100vh;
   border-right: 3px solid #53bba9;
   border-left: 3px solid #53bba9;
+  overflow: hidden;
 }
 
 body a:link,
@@ -680,6 +681,43 @@ body #elementTwo #video-container .embed-container embed {
   height: 100%;
 }
 
+body #xElementOne #xElOneText {
+  padding: 30px;
+}
+
+body #xElementOne img {
+  border: 3px solid #53bba9;
+  height: 150px;
+}
+
+@media (min-width: 576px) {
+  body #xElementOne img {
+    height: 250px;
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  body #xElementOne img {
+    height: 400px;
+    width: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  body #xElementOne img {
+    height: 480px;
+    width: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  body #xElementOne img {
+    height: 400px;
+    width: auto;
+  }
+}
+
 .content {
   padding-top: 40px;
   text-align: center;
@@ -754,6 +792,36 @@ body #elementTwo #video-container .embed-container embed {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.content .content_box_mythos .mythos #myth1 {
+  -webkit-animation: slideInFromBot 2s ease-out;
+          animation: slideInFromBot 2s ease-out;
+}
+
+.content .content_box_mythos .mythos #myth2 {
+  -webkit-animation: slideInFromBot 2.3s ease-out;
+          animation: slideInFromBot 2.3s ease-out;
+}
+
+.content .content_box_mythos .mythos #myth3 {
+  -webkit-animation: slideInFromBot 2.7s ease-out;
+          animation: slideInFromBot 2.7s ease-out;
+}
+
+.content .content_box_mythos .mythos #myth4 {
+  -webkit-animation: slideInFromBot 3s ease-out;
+          animation: slideInFromBot 3s ease-out;
+}
+
+.content .content_box_mythos .mythos #myth5 {
+  -webkit-animation: slideInFromBot 3.3s ease-out;
+          animation: slideInFromBot 3.3s ease-out;
+}
+
+.content .content_box_mythos .mythos #myth6 {
+  -webkit-animation: slideInFromBot 3.7s ease-out;
+          animation: slideInFromBot 3.7s ease-out;
 }
 
 .content .content_box_mythos .mythos .myth {
@@ -856,9 +924,9 @@ body #elementTwo #video-container .embed-container embed {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   text-align: start;
   background-size: 100% 100%;
   overflow: hidden;
@@ -895,19 +963,25 @@ body #elementTwo #video-container .embed-container embed {
 }
 
 .about .cards .card h2 {
-  color: #e6f512;
+  color: #e6f512 !important;
   padding: 10px 0 0 0;
 }
 
-.about .cards .card:nth-child(2) .img {
-  background-image: url("https://boundingintocomics.com/wp-content/uploads/2020/06/2020.06.03-07.37-boundingintocomics-5ed7fbfa4e148.png");
+.about .cards #card1 {
+  -webkit-animation: slideInFromLeft 0.7s ease-out;
+          animation: slideInFromLeft 0.7s ease-out;
 }
 
-.about .cards .card:last-child .img {
-  background-image: url("https://www.abc.net.au/news/image/954416-3x2-940x627.jpg");
+.about .cards #card2 {
+  -webkit-animation: slideInFromBot 0.7s ease-out;
+          animation: slideInFromBot 0.7s ease-out;
 }
 
-.firefly {
+.about .cards #card3 {
+  -webkit-animation: slideInFromRight 0.7s ease-out;
+          animation: slideInFromRight 0.7s ease-out;
+}
+
 body .firefly {
   position: fixed;
   left: 50%;
@@ -4119,13 +4193,13 @@ body .firefly:nth-child(15)::after {
   30%,
   100% {
     opacity: 0;
-    -webkit-box-shadow: 0 0 0vw 0vw yellow;
-            box-shadow: 0 0 0vw 0vw yellow;
+    -webkit-box-shadow: 0 0 0vw 0vw #e6f512;
+            box-shadow: 0 0 0vw 0vw #e6f512;
   }
   5% {
     opacity: 1;
-    -webkit-box-shadow: 0 0 2vw 0.4vw yellow;
-            box-shadow: 0 0 2vw 0.4vw yellow;
+    -webkit-box-shadow: 0 0 2vw 0.4vw #e6f512;
+            box-shadow: 0 0 2vw 0.4vw #e6f512;
   }
 }
 
@@ -4134,13 +4208,13 @@ body .firefly:nth-child(15)::after {
   30%,
   100% {
     opacity: 0;
-    -webkit-box-shadow: 0 0 0vw 0vw yellow;
-            box-shadow: 0 0 0vw 0vw yellow;
+    -webkit-box-shadow: 0 0 0vw 0vw #e6f512;
+            box-shadow: 0 0 0vw 0vw #e6f512;
   }
   5% {
     opacity: 1;
-    -webkit-box-shadow: 0 0 2vw 0.4vw yellow;
-            box-shadow: 0 0 2vw 0.4vw yellow;
+    -webkit-box-shadow: 0 0 2vw 0.4vw #e6f512;
+            box-shadow: 0 0 2vw 0.4vw #e6f512;
   }
 }
 /*# sourceMappingURL=style.css.map */
