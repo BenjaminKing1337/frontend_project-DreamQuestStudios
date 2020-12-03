@@ -508,6 +508,7 @@ body #titleYear {
   width: 1fr;
   max-width: 600px;
   border: 1px solid #53bba9;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,6 +557,83 @@ body #titleYear {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.upcoming {
+  text-align: center;
+}
+
+.upcoming h2 {
+  color: #53bba9;
+  margin-top: 40px;
+}
+
+.upcoming p {
+  width: 60%;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+.upcoming .projects {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 992px) {
+  .upcoming .projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.upcoming .projects .placeholder {
+  height: 650px;
+  width: 300px;
+  background: #948c8c27;
+  border: #53bba9 solid 1px;
+  border-radius: 15px;
+  margin: 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media (max-width: 992px) {
+  .upcoming .projects .placeholder {
+    width: 350px;
+  }
+}
+
+.upcoming .projects .placeholder h2 {
+  color: #e6f512;
+  margin-top: 0;
+}
+
+.upcoming .projects .placeholder:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .about {
@@ -610,7 +688,7 @@ body #titleYear {
   background-size: 100% 100%;
   overflow: hidden;
   background-color: #948c8c27;
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 15px;
   -webkit-transition: 1s;
   transition: 1s;
@@ -629,8 +707,8 @@ body #titleYear {
 }
 
 .about .cards .card:hover {
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .about .cards .card .img {
@@ -654,7 +732,6 @@ body #titleYear {
   background-image: url("https://www.abc.net.au/news/image/954416-3x2-940x627.jpg");
 }
 
-.firefly {
 body .firefly {
   position: fixed;
   left: 50%;

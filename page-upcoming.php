@@ -27,14 +27,22 @@ get_header(); ?>
                     </ul>
                 </nav>
             <?php } ?>
-            <!-- splitting layout of this specific page into columns -->
-            <div class="column-container clearfix">
-
-                <!-- The content column -->
-                <div class="text-column">
-                    <?php the_content(); ?>
+            
+            <div class="upcoming">
+                <h2>Upcoming Projects</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit. Donec auctor libero efficitur consequat iaculis. Quisque augue velit, aliquet id metus vitae, volutpat porta urna. Vivamus lobortis</p>
+            
+                <div class="projects">
+                    <div class="placeholder">
+                        <h2>Coming Soon</h2>
+                    </div>
+                    <div class="placeholder">
+                        <h2>Coming Soon</h2>
+                    </div>
+                    <div class="placeholder">
+                        <h2>Coming Soon</h2>
+                    </div>
                 </div>
-
             </div>
 
 
