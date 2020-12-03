@@ -1,45 +1,45 @@
-<?php
-
-get_header(); ?>
+<?php get_header(); ?>
 
 
+<div class="news">
 
-<!-- The post loop -->
-<?php if (have_posts()) :
-    while (have_posts()) : the_post(); ?>
+    <!-- See newer/older posts -->
+    <div class="older-posts">
+        <?php previous_posts_link("Older Posts") ?>
+    </div>
+    <div class="newer-posts">
+        <?php next_posts_link("Newer Posts") ?>
+    </div>
 
-        <?php if (get_field('bg_img', 12)) : ?>
-            <div style="background-image: url('<?php the_field('bg_img', 12); ?>')">
-            <?php endif; ?>
-
-            <article class="post page">
-                <!-- splitting layout of this specific page into columns -->
-
-
-                <div class="column-container clearfix">
-
-                    <!-- Title column -->
-                    <div class="title-column">
-                        <h2><?php the_title(); ?></h2>
-                        <img src="<?php echo 'get_template_directory_uri'(); ?>/assets/logoblack.png" height="200" width="auto" />
-                    </div>
-                    <!-- The content column -->
-                    <div class="text-column">
-                        <?php the_content(); ?>
-                    </div>
-
-                </div>
+    <!-- The post loop -->
+    <?php if (have_posts()) :
+        while (have_posts()) : the_post(); ?>
 
 
+
+            <!-- Includes link to posts, title of posts and content of posts. -->
+            <article class="post" id="news">
+                <h2>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?>
+                    </a>
+                </h2>
+                <div><?php the_content(); ?></div>
             </article>
-    <?php endwhile;
+        <?php endwhile; ?>
 
-else :
-    echo '<p>No content found</p>';
+        <!-- See newer/older posts -->
+        <div class="older-posts">
+            <?php previous_posts_link("Older Posts") ?>
+        </div>
+        <div class="newer-posts">
+            <?php next_posts_link("Newer Posts") ?>
+        </div>
+</div>
 
+<?php else :
+        echo '<p>No content found</p>';
 
-endif;
+    endif;
 
-get_footer();
-
-    ?>
+    get_footer(); ?>
