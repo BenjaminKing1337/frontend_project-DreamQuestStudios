@@ -3,8 +3,55 @@ Theme Name: DQS
 Author: King & Kuzma
 */
 
+//Keyframes
+body {
+    @keyframes move-twink-back {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: -10000px 5000px;
+        }
+    }
+    @keyframes appear {
+        0% {
+            opacity: 0;
+            transform: scale(0);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(400%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-400%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideInFromBot {
+        0% {
+            transform: translateY(400%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
+// No. of Firefly divs in header.php
 $quantity: 15;
 
+//Colorscheme
 $accent: #e6f512;
 $main: #000000;
 $sub: #53bba9;
@@ -25,7 +72,7 @@ html {
     div {
         a {
             img {
-                visibility: hidden;
+                visibility: hidden; //This Hides the 000webhostapp tag on the footer
             }
         }
     }
@@ -61,7 +108,7 @@ body {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    background: linear-gradient(to bottom right, $main 0%, #434343 100%);
+    background-color: $main;
 
     /* general layout */
     div.container {
@@ -84,6 +131,7 @@ body {
     p {
         line-height: 1.65em;
         padding: 0 0 1em 0;
+        // animation: appear 0.7s ease-out;
     }
     h1,
     h2,
@@ -93,6 +141,7 @@ body {
     h6 {
         margin: 0;
         font-weight: bold;
+        // animation: appear 0.3s ease-out;
     }
     /* header */
     .site-header {
@@ -246,143 +295,244 @@ body {
     }
 }
 // SINGLE PAGE styles
-.post .title {
-    color: $accent;
-    font-size: 60px;
+body {
+    .post .title {
+        color: $accent;
+        font-size: 60px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: $line 2px solid;
+        animation: appear 0.3s ease-out;
+        @media (max-width: $md) {
+           font-size: 40px;
+        }
+    }
+    .post-meta {
+        animation: appear 0.7s ease-out;
+    }
+    .post {
+        padding: 30px;
+        h3 {
+            padding: 30px;
+        }
+    }
+    .the-content {
+        margin: 30px 0;
+        padding: 30px 0;
+        animation: appear 1s ease-out;
+        @media (min-width: $md) {
+            margin: 50px auto;
+            padding: 50px auto;
+        }
+    }
+    #commentbox {
+        margin: 100px 200px;
+        padding: 50px;
+        background-color: $box;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        animation: appear 1.3s ease-out;
+        @media (max-width: $md) {
+            margin: 5px;
+            padding: 5px;
+        }
+        .commentlist {
+            border: $line 2px solid;
+            padding: 5px;
+            padding-left: 25px;
+            animation: appear 1.7s ease-out;
+        }
+        .comment-form-comment {
+            display: flex;
+            flex-direction: column;
+        }
+        #comment {
+            background-color: $line;
+            color: $text !important;
+        }
+        .form-submit {
+            margin: 0 auto !important;
+        }
+        .submit {
+            background-color: $accent;
+            border-radius: 5px;
+            border: 2px solid $line;
+            padding: 10px;
+        }
+    }
 }
 
 // NEWS PAGE styles
-#newsflash {
-    width: 30%;
-    float: right;
-    margin: 0 0 30px 30px;
-    padding: 20px;
-    background-color: $main;
-    border: $accent 1px outset;
-    h4 {
-        margin-bottom: 6px;
-    }
-    p {
-        font-size: 85%;
-    }
-}
-.news {
-    margin: 0 100px;
-    padding: 30px;
-    background-color: $box;
-    border-radius: 5px;
-    #news {
-        margin: 55px;
-        border-bottom: 2px solid $line;
-        h2 {
-            padding: 20px;
+body {
+    .news {
+        margin: 0 100px;
+        padding: 30px;
+        background-color: $box;
+        border-radius: 5px;
+        animation: appear 0.3s ease-out;
+        @media (max-width: $md) {
+            margin: 0;
+            padding: 0;
         }
-        p {
-            padding: 30px;
-            background-color: $box;
-            border-radius: 5px;
+        #news {
+            margin: 55px;
+            border-bottom: 2px solid $line;
+            h2 {
+                padding: 20px;
+                animation: appear 0.7s ease-out;
+            }
+            p {
+                padding: 30px;
+                background-color: $box;
+                border-radius: 5px;
+                animation: appear 1s ease-out;
+            }
+        }
+        #news:last-of-type {
+            border-bottom: none;
         }
     }
-    #news:last-of-type {
-        border-bottom: none;
+    .stars,
+    .twinkling {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
     }
+
+    .stars {
+        background: #000 url(assets/stars.png) repeat top center;
+        z-index: -1;
+        background-attachment: fixed !important;
+        background-repeat: repeat !important;
+        background-position: 0 0 !important;
+        background-size: 100% 100% !important;
+    }
+
+    .twinkling {
+        background: transparent url(assets/twinkling.png) repeat top center;
+        animation: move-twink-back 200s linear infinite;
+        z-index: -1;
+    }
+    
 }
 
 // HOME PAGE styles
-#elementOne {
-    display: flex;
-    flex-direction: column-reverse;
-    @media (min-width: $xl) {
-        flex-direction: row;
-    }
-    img {
-        border: solid 2px $sub;
-        margin: 50px auto;
-        height: 150px;
-        width: auto;
-        @media (min-width: $sm) {
-            height: 250px;
-            width: auto;
-        }
-        @media (min-width: $md) {
-            height: 400px;
-            width: auto;
-        }
-        @media (min-width: $lg) {
-            height: 480px;
-            width: auto;
-        }
-        @media (min-width: $xl) {
-            height: 400px;
-            width: auto;
-        }
-    }
-    #elOneText {
-        padding: 50px;
-
-        h2 {
-            border-bottom: 2px solid $line;
-            padding-bottom: 20px;
-            color: $sub;
-        }
-    }
-}
-#elementTwo {
-    display: flex;
-    flex-direction: column;
-
-    #elTwoText {
+body {
+    #elementOne {
         display: flex;
-        justify-content: center;
-        color: $sub;
-    }
-    #video-container {
-        padding: 30px;
-        padding-top: 10px;
+        flex-direction: column-reverse;
+        animation: appear 0.3s ease-out;
         @media (min-width: $xl) {
-            padding: 120px;
-            padding-top: 10px;
+            flex-direction: row;
         }
-        .embed-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            overflow: hidden;
-            max-width: 100%;
-            height: auto;
+        img {
+            border: solid 2px $sub;
+            margin: 50px auto;
+            height: 150px;
+            width: auto;
+            animation: appear 0.7s ease-out;
+            @media (min-width: $sm) {
+                height: 250px;
+                width: auto;
+            }
+            @media (min-width: $md) {
+                height: 400px;
+                width: auto;
+            }
+            @media (min-width: $lg) {
+                height: 480px;
+                width: auto;
+            }
+            @media (min-width: $xl) {
+                height: 400px;
+                width: auto;
+            }
         }
+        #elOneText {
+            padding: 50px;
+            animation: appear 1s ease-out;
 
-        .embed-container iframe,
-        .embed-container object,
-        .embed-container embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            h2 {
+                border-bottom: 2px solid $line;
+                padding-bottom: 20px;
+                color: $sub;
+                animation: appear 1.3s ease-out;
+            }
+        }
+    }
+    #elementTwo {
+        display: flex;
+        flex-direction: column;
+        animation: appear 1.3s ease-out;
+        #elTwoText {
+            display: flex;
+            justify-content: center;
+            color: $sub;
+            animation: appear 1.7s ease-out;
+        }
+        #video-container {
+            padding: 30px;
+            padding-top: 10px;
+            animation: appear 2s ease-out;
+            @media (min-width: $xl) {
+                padding: 120px;
+                padding-top: 10px;
+            }
+            .embed-container {
+                border: solid 2px $sub;
+                position: relative;
+                padding-bottom: 56.25%;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .embed-container iframe,
+            .embed-container object,
+            .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }
 
-// PROJECTS PAGE styles
+//PROJECTS PAGE styles
+body {
+}
 
-//XANTHOUS PAGE
+//XANTHOUS PAGE styles
 .content {
     padding-top: 40px;
     text-align: center;
+    animation: appear 0.3s ease-out;
 
     h2 {
         color: $sub;
+        animation: slideInFromRight 1s ease-out;
     }
     p {
         width: 60%;
         margin: 0 auto;
         padding: 25px 0;
+        animation: slideInFromLeft 1s ease-out;
     }
 
     .content_box_mythos {
         height: auto;
         background-color: $box;
         border-radius: 5px;
+        animation: slideInFromBot 1s ease-out;
         #content-text {
             text-align: center;
             h2 {
