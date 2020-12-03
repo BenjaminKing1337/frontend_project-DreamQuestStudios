@@ -30,6 +30,21 @@ get_header(); ?>
 
             <div class="content">
 
+                <div class="description">
+                    <div class="text">
+                        <h2><?php the_field('game_header'); ?></h2>
+                        <p><?php the_field('game_paragraph'); ?></p>
+                    </div>
+                    <?php if (get_field('game_img')) : ?>
+                        <div class="img" style="background-image: url('<?php the_field('game_img'); ?>')"></div>
+                    <?php endif; ?>
+                </div>
+                <div class="posters">
+                    <div class="poster"></div>
+                    <div class="poster"></div>
+                    <div class="poster"></div>
+                </div>
+
                 <h2><?php the_field('1st_header'); ?></h2>
                 <p><?php the_field('1st_paragraph'); ?></p>
 
