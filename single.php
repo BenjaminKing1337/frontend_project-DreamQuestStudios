@@ -2,7 +2,8 @@
 
 <div id="primary" class="row-fluid">
     <div id="content" role="main" class="span8 offset2">
-
+        <div class="stars"></div>
+        <div class="twinkling"></div>
         <!-- the post loop -->
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
@@ -28,8 +29,6 @@
 
                     <div class="meta clearfix">
 
-                        <!-- displays category if assigned any -->
-                        <div class="category"><?php echo get_the_category_list(); ?></div>
 
                         <!-- displays tags if assigned any -->
                         <div class="tags"><?php echo get_the_tag_list('| &nbsp;', '&nbsp;'); ?></div>
@@ -37,11 +36,11 @@
                 </article>
 
             <?php endwhile; ?>
-
-            <!-- displays comments and comment text box -->
-            <?php if (comments_open() || '0' != get_comments_number())
-                comments_template('', true); ?>
-
+            <div id="commentbox">
+                <!-- displays comments and comment text box -->
+                <?php if (comments_open() || '0' != get_comments_number())
+                    comments_template('', true); ?>
+            </div>
         <?php else : ?>
 
             <!-- error msg if no posts -->

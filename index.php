@@ -1,15 +1,9 @@
 <?php get_header(); ?>
 
-
+<div class="stars"></div>
+<div class="twinkling"></div>
 <div class="news">
 
-    <!-- See newer/older posts -->
-    <div class="older-posts">
-        <?php previous_posts_link("Older Posts") ?>
-    </div>
-    <div class="newer-posts">
-        <?php next_posts_link("Newer Posts") ?>
-    </div>
 
     <!-- The post loop -->
     <?php if (have_posts()) :
@@ -29,11 +23,11 @@
         <?php endwhile; ?>
 
         <!-- See newer/older posts -->
-        <div class="older-posts">
-            <?php previous_posts_link("Older Posts") ?>
-        </div>
         <div class="newer-posts">
-            <?php next_posts_link("Newer Posts") ?>
+            <?php previous_posts_link("Newer Posts") ?>
+        </div>
+        <div class="older-posts">
+            <?php next_posts_link("Older Posts") ?>
         </div>
 </div>
 

@@ -21,7 +21,6 @@ get_header(); ?>
                 </h2>
 
 
-
                 <!-- the post content -->
                 <?php the_content(); ?>
             </article>

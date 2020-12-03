@@ -10,8 +10,10 @@
 
 
 <?php if (get_field('bg_img')) : ?>                            
-<body style="background-image: url('<?php the_field('bg_img'); ?>')" <?php body_class(); ?>>
+<body style="background-image: url('<?php the_field('bg_img'); ?>')"  <?php body_class(); ?>>
 <?php endif; ?>
+
+
 
 <div class="firefly"></div>
 <div class="firefly"></div>

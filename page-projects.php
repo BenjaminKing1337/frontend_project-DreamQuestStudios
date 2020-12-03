@@ -29,11 +29,12 @@ get_header(); ?>
             <?php } ?>
             <div id="xElementOne">
                 <div id="xElOneText">
-                    <h2>Xanthous is coming!</h2>
-                    <p>A mysterious note has been recovered at the library of Miskatonic University in New England. As the head librarian you take the investigation upon yourself and venture out to where the note tells you of an unfinished ritual awaiting completion, in a small place called Newbury...</p>
+                    <h2><?php the_field('1st_header'); ?></h2>
+                    <p><?php the_field('1st_paragraph'); ?></p>
                 </div>
-                <img src="<?php echo 'get_template_directory_uri'(); ?>/assets/logoblack.png" height="400px" width="auto" />
-
+                <?php if (get_field('1st_img')) : ?>
+                    <img src="<?php the_field('1st_img'); ?>" />
+                <?php endif; ?>
             </div>
 
 
