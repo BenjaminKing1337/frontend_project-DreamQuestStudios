@@ -609,6 +609,128 @@ body {
     }
 }
 
+// ABOUT US PAGE
+.about{
+    text-align: center;
+    h2{color: $sub; padding-bottom: 45px;}
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        padding: 25px;
+        margin: auto;
+        @media (max-width: $lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: $md) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .card{
+            min-height: 500px;
+            width: 1fr;
+            max-width: 600px;
+            @media (max-width: $md) {
+                padding:15px 90px;
+            }
+            @media (max-width: $sm) {
+                padding:15px 25px;
+            }
+            border: 1px solid $sub;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: start;
+            background-size: 100% 100%;
+            overflow: hidden;
+            background-color: $box;
+            border-radius: 25px;
+            padding: 15px;
+            transition: 1s;
+            &:hover{
+                transform: translateY(-15px);
+            }
+            .img{
+                height: 200px;
+                width: 100%;
+                background-image: url("https://images.jfmedier.dk/images/2/23/234/23432202-afae-4640-9151-7bd95bc7766b_6_90_0_0_800_532_880_585_5e4c06bf.jpg");
+                background-size: 100% 100%;
+                border-radius: 15px 15px 15px 0;
+            }
+            h2{color: $accent; padding: 10px 0 0 0;}
+        }
+        .card:nth-child(2){
+            .img{
+                background-image: url("https://boundingintocomics.com/wp-content/uploads/2020/06/2020.06.03-07.37-boundingintocomics-5ed7fbfa4e148.png");
+            }
+        }
+        .card:last-child{
+            .img{
+                background-image: url("https://www.abc.net.au/news/image/954416-3x2-940x627.jpg");
+            }
+        }
+    }
+}
+
+
+
+// PARTICLE EFFECT
+.firefly {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 0.4vw;
+    height: 0.4vw;
+    margin: -0.2vw 0 0 9.8vw;
+    animation: ease 200s alternate infinite;
+    pointer-events: none;
+}
+.firefly::before,
+.firefly::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform-origin: -10vw;
+}
+.firefly::before {
+    background: black;
+    opacity: 0.4;
+    animation: drift ease alternate infinite;
+}
+.firefly::after {
+    background: white;
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw $accent;
+    animation: drift ease alternate infinite, flash ease infinite;
+}
+
+.firefly:nth-child(1) {
+    animation-name: move1;
+}
+.firefly:nth-child(1)::before {
+    animation-duration: 17s;
+}
+.firefly:nth-child(1)::after {
+    animation-duration: 17s, 7986ms;
+    animation-delay: 0ms, 5139ms;
+}
+
+@keyframes move1 {
+    0% {
+        transform: translateX(-18vw) translateY(-9vh) scale(0.65);
+    }
+    5.2631578947% {
+        transform: translateX(-41vw) translateY(2vh) scale(0.52);
+    }
+    10.5263157895% {
+        transform: translateX(0vw) translateY(-14vh) scale(0.83);
+    }
+    15.7894736842% {
+        transform: translateX(44vw) translateY(19vh) scale(0.76);
+    }
+    21.0526315789% {
+        transform: translateX(-8vw) translateY(13vh) scale(0.82);
 // FIREFLY ANIMATION
 body {
     .firefly {
