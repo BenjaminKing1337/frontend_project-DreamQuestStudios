@@ -685,7 +685,7 @@ body {
             @media (max-width: $lg) {
                 width: 300px;
             }
-            background: $box;
+            background-size: 100% 100%;
             border: $sub solid 1px;
             border-radius: 15px;
             margin: 15px auto;
