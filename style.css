@@ -175,6 +175,10 @@ body div.container {
   overflow: hidden;
 }
 
+body .post.page {
+  padding-top: 0 !important;
+}
+
 body a:link,
 body a:visited {
   color: #53bba9;
@@ -912,33 +916,33 @@ body .fade {
 }
 
 .content .content_box_mythos .mythos #myth1 {
-  -webkit-animation: slideInFromBot 2s ease-out;
-          animation: slideInFromBot 2s ease-out;
+  -webkit-animation: slideInFromBot 1.2s ease-out;
+          animation: slideInFromBot 1.2s ease-out;
 }
 
 .content .content_box_mythos .mythos #myth2 {
-  -webkit-animation: slideInFromBot 2.3s ease-out;
-          animation: slideInFromBot 2.3s ease-out;
+  -webkit-animation: slideInFromBot 1.3s ease-out;
+          animation: slideInFromBot 1.3s ease-out;
 }
 
 .content .content_box_mythos .mythos #myth3 {
-  -webkit-animation: slideInFromBot 2.7s ease-out;
-          animation: slideInFromBot 2.7s ease-out;
+  -webkit-animation: slideInFromBot 1.4s ease-out;
+          animation: slideInFromBot 1.4s ease-out;
 }
 
 .content .content_box_mythos .mythos #myth4 {
-  -webkit-animation: slideInFromBot 3s ease-out;
-          animation: slideInFromBot 3s ease-out;
+  -webkit-animation: slideInFromBot 1.5s ease-out;
+          animation: slideInFromBot 1.5s ease-out;
 }
 
 .content .content_box_mythos .mythos #myth5 {
-  -webkit-animation: slideInFromBot 3.3s ease-out;
-          animation: slideInFromBot 3.3s ease-out;
+  -webkit-animation: slideInFromBot 1.6s ease-out;
+          animation: slideInFromBot 1.6s ease-out;
 }
 
 .content .content_box_mythos .mythos #myth6 {
-  -webkit-animation: slideInFromBot 3.7s ease-out;
-          animation: slideInFromBot 3.7s ease-out;
+  -webkit-animation: slideInFromBot 1.7s ease-out;
+          animation: slideInFromBot 1.7s ease-out;
 }
 
 .content .content_box_mythos .mythos .myth {

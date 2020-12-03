@@ -29,18 +29,18 @@ get_header(); ?>
             <?php } ?>
             
             <div class="upcoming">
-                <h2>Upcoming Projects</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit. Donec auctor libero efficitur consequat iaculis. Quisque augue velit, aliquet id metus vitae, volutpat porta urna. Vivamus lobortis</p>
+                <h2><?php the_field('1st_header'); ?></h2>
+                <p><?php the_field('1st_paragraph'); ?></p>
             
                 <div class="projects">
                     <div class="placeholder">
-                        <h2>Coming Soon</h2>
+                        <h2><?php the_field('1st_u_header'); ?></h2>
                     </div>
                     <div class="placeholder">
-                        <h2>Coming Soon</h2>
+                        <h2><?php the_field('2nd_u_header'); ?></h2>
                     </div>
                     <div class="placeholder">
-                        <h2>Coming Soon</h2>
+                        <h2><?php the_field('3rd_u_header'); ?></h2>
                     </div>
                 </div>
             </div>
