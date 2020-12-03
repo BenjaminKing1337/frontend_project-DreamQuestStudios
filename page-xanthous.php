@@ -43,65 +43,74 @@ get_header(); ?>
 
                     <?php if (get_field('1st_p_img')) : ?>
                         <div id="poster1" class="poster" style="background-image: url('<?php the_field('1st_p_img'); ?>')"></div>
-                        <?php endif; ?>
-                        <?php if (get_field('2nd_p_img')) : ?>
-                            <div id="poster2" class="poster" style="background-image: url('<?php the_field('2nd_p_img'); ?>')"></div>
+                    <?php endif; ?>
+                    <?php if (get_field('2nd_p_img')) : ?>
+                        <div id="poster2" class="poster" style="background-image: url('<?php the_field('2nd_p_img'); ?>')"></div>
+                    <?php endif; ?>
+                    <?php if (get_field('3rd_p_img')) : ?>
+                        <div id="poster3" class="poster" style="background-image: url('<?php the_field('3rd_p_img'); ?>')"></div>
+                    <?php endif; ?>
+                </div>
+
+                <h2><?php the_field('1st_header'); ?></h2>
+                <p><?php the_field('1st_paragraph'); ?></p>
+                <div class="lovecraft">
+                    <?php if (get_field('lovecraft_img')) : ?>
+                        <div class="img" style="background-image: url('<?php the_field('lovecraft_img'); ?>')"></div>
+                    <?php endif; ?>
+                    <div class="text">
+                        <h2><?php the_field('lovecraft_header'); ?></h2>
+                        <p><?php the_field('lovecraft_paragraph'); ?></p>
+                    </div>
+                </div>
+
+                <div class="content_box_mythos">
+                    <div id="content-text">
+                        <h2><?php the_field('2nd_header'); ?></h2>
+                        <p><?php the_field('2nd_paragraph'); ?></p>
+                    </div>
+                    <div class="mythos">
+                        <?php if (get_field('1st_m_img')) : ?>
+                            <div id="myth1" class="myth" style="background-image: url('<?php the_field('1st_m_img'); ?>')">
                             <?php endif; ?>
-                            <?php if (get_field('3rd_p_img')) : ?>
-                                <div id="poster3" class="poster" style="background-image: url('<?php the_field('3rd_p_img'); ?>')"></div>
-                                <?php endif; ?>
-                                </div>
-
-                                <h2><?php the_field('1st_header'); ?></h2>
-                                <p><?php the_field('1st_paragraph'); ?></p>
-
-                                <div class="content_box_mythos">
-                                    <div id="content-text">
-                                        <h2><?php the_field('2nd_header'); ?></h2>
-                                        <p><?php the_field('2nd_paragraph'); ?></p>
-                                    </div>
-                                    <div class="mythos">
-                                        <?php if (get_field('1st_m_img')) : ?>
-                                            <div id="myth1" class="myth" style="background-image: url('<?php the_field('1st_m_img'); ?>')">
-                                            <?php endif; ?>
-                                            <h3><?php the_field('1st_m_header'); ?></h3>
-                                            <p><?php the_field('1st_m_paragraph'); ?></p>
-                                            </div>
-                                            <?php if (get_field('2nd_m_img')) : ?>
-                                                <div id="myth2" class="myth" style="background-image: url('<?php the_field('2nd_m_img'); ?>')">
-                                                <?php endif; ?>
-                                                <h3><?php the_field('2nd_m_header'); ?></h3>
-                                                <p><?php the_field('2nd_m_paragraph'); ?></p>
-                                                </div>
-                                                <?php if (get_field('3rd_m_img')) : ?>
-                                                    <div id="myth3" class="myth" style="background-image: url('<?php the_field('3rd_m_img'); ?>')">
-                                                    <?php endif; ?>
-                                                    <h3><?php the_field('3rd_m_header'); ?></h3>
-                                                    <p><?php the_field('3rd_m_paragraph'); ?></p>
-                                                    </div>
-                                                    <?php if (get_field('4th_m_img')) : ?>
-                                                        <div id="myth4" class="myth" style="background-image: url('<?php the_field('4th_m_img'); ?>')">
-                                                        <?php endif; ?>
-                                                        <h3><?php the_field('4th_m_header'); ?></h3>
-                                                        <p><?php the_field('4th_m_paragraph'); ?></p>
-                                                        </div>
-                                                        <?php if (get_field('5th_m_img')) : ?>
-                                                            <div id="myth5" class="myth" style="background-image: url('<?php the_field('5th_m_img'); ?>')">
-                                                            <?php endif; ?>
-                                                            <h3><?php the_field('5th_m_header'); ?></h3>
-                                                            <p><?php the_field('5th_m_paragraph'); ?></p>
-                                                            </div>
-                                                            <?php if (get_field('6th_m_img')) : ?>
-                                                                <div id="myth6" class="myth" style="background-image: url('<?php the_field('6th_m_img'); ?>')">
-                                                                <?php endif; ?>
-                                                                <h3><?php the_field('6th_m_header'); ?></h3>
-                                                                <p><?php the_field('6th_m_paragraph'); ?></p>
-                                                                </div>
-                                    </div>
-                                </div>
-
-
+                            <h3><?php the_field('1st_m_header'); ?></h3>
+                            <p><?php the_field('1st_m_paragraph'); ?></p>
                             </div>
+                            <?php if (get_field('2nd_m_img')) : ?>
+                                <div id="myth2" class="myth" style="background-image: url('<?php the_field('2nd_m_img'); ?>')">
+                                <?php endif; ?>
+                                <h3><?php the_field('2nd_m_header'); ?></h3>
+                                <p><?php the_field('2nd_m_paragraph'); ?></p>
+                                </div>
+                                <?php if (get_field('3rd_m_img')) : ?>
+                                    <div id="myth3" class="myth" style="background-image: url('<?php the_field('3rd_m_img'); ?>')">
+                                    <?php endif; ?>
+                                    <h3><?php the_field('3rd_m_header'); ?></h3>
+                                    <p><?php the_field('3rd_m_paragraph'); ?></p>
+                                    </div>
+                                    <?php if (get_field('4th_m_img')) : ?>
+                                        <div id="myth4" class="myth" style="background-image: url('<?php the_field('4th_m_img'); ?>')">
+                                        <?php endif; ?>
+                                        <h3><?php the_field('4th_m_header'); ?></h3>
+                                        <p><?php the_field('4th_m_paragraph'); ?></p>
+                                        </div>
+                                        <?php if (get_field('5th_m_img')) : ?>
+                                            <div id="myth5" class="myth" style="background-image: url('<?php the_field('5th_m_img'); ?>')">
+                                            <?php endif; ?>
+                                            <h3><?php the_field('5th_m_header'); ?></h3>
+                                            <p><?php the_field('5th_m_paragraph'); ?></p>
+                                            </div>
+                                            <?php if (get_field('6th_m_img')) : ?>
+                                                <div id="myth6" class="myth" style="background-image: url('<?php the_field('6th_m_img'); ?>')">
+                                                <?php endif; ?>
+                                                <h3><?php the_field('6th_m_header'); ?></h3>
+                                                <p><?php the_field('6th_m_paragraph'); ?></p>
+                                                </div>
+                    </div>
+                </div>
+
+
+            </div>
 
 
         </article>

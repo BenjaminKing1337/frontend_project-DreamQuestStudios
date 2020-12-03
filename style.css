@@ -861,7 +861,7 @@ body .fade {
           animation: slideInFromLeft 1s ease-out;
 }
 
-.content .description {
+.content .description, .content .lovecraft {
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -871,7 +871,7 @@ body .fade {
 }
 
 @media (max-width: 768px) {
-  .content .description {
+  .content .description, .content .lovecraft {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -880,7 +880,7 @@ body .fade {
   }
 }
 
-.content .description p {
+.content .description p, .content .lovecraft p {
   width: 98%;
   margin: 0 auto 0 0;
   padding: 25px 0;
@@ -888,7 +888,7 @@ body .fade {
           animation: slideInFromLeft 1s ease-out;
 }
 
-.content .description .img {
+.content .description .img, .content .lovecraft .img {
   min-height: 400px;
   min-width: 300px;
   margin: 0 auto;
@@ -898,7 +898,7 @@ body .fade {
 }
 
 @media (max-width: 768px) {
-  .content .description .img {
+  .content .description .img, .content .lovecraft .img {
     max-width: 200px;
   }
 }
@@ -939,6 +939,10 @@ body .fade {
   .content .posters .poster {
     width: 300px;
   }
+}
+
+.content .lovecraft .text {
+  padding-left: 2%;
 }
 
 .content .content_box_mythos {
