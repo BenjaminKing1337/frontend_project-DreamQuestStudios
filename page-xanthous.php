@@ -48,6 +48,16 @@ get_header(); ?>
                 <h2><?php the_field('1st_header'); ?></h2>
                 <p><?php the_field('1st_paragraph'); ?></p>
 
+                <div class="lovecraft">
+                    <?php if (get_field('lovecraft_img')) : ?>
+                        <div class="img" style="background-image: url('<?php the_field('lovecraft_img'); ?>')"></div>
+                    <?php endif; ?>
+                    <div class="text">
+                        <h2><?php the_field('lovecraft_header'); ?></h2>
+                        <p><?php the_field('lovecraft_paragraph'); ?></p>
+                    </div>
+                </div>
+
                 <div class="content_box_mythos">
                     <div id="content-text">
                         <h2><?php the_field('2nd_header'); ?></h2>
