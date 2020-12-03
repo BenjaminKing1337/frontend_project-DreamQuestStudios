@@ -455,6 +455,71 @@ body {
     }
 }
 
+// ABOUT US PAGE
+.about{
+    text-align: center;
+    h2{color: $sub; padding-bottom: 45px;}
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        padding: 25px;
+        margin: auto;
+        @media (max-width: $lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: $md) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .card{
+            min-height: 500px;
+            width: 1fr;
+            max-width: 600px;
+            @media (max-width: $md) {
+                padding:15px 90px;
+            }
+            @media (max-width: $sm) {
+                padding:15px 25px;
+            }
+            border: 1px solid $sub;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: start;
+            background-size: 100% 100%;
+            overflow: hidden;
+            background-color: $box;
+            border-radius: 25px;
+            padding: 15px;
+            transition: 1s;
+            &:hover{
+                transform: translateY(-15px);
+            }
+            .img{
+                height: 200px;
+                width: 100%;
+                background-image: url("https://images.jfmedier.dk/images/2/23/234/23432202-afae-4640-9151-7bd95bc7766b_6_90_0_0_800_532_880_585_5e4c06bf.jpg");
+                background-size: 100% 100%;
+                border-radius: 15px 15px 15px 0;
+            }
+            h2{color: $accent; padding: 10px 0 0 0;}
+        }
+        .card:nth-child(2){
+            .img{
+                background-image: url("https://boundingintocomics.com/wp-content/uploads/2020/06/2020.06.03-07.37-boundingintocomics-5ed7fbfa4e148.png");
+            }
+        }
+        .card:last-child{
+            .img{
+                background-image: url("https://www.abc.net.au/news/image/954416-3x2-940x627.jpg");
+            }
+        }
+    }
+}
+
+
+
+// PARTICLE EFFECT
 .firefly {
     position: fixed;
     left: 50%;

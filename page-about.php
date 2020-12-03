@@ -7,21 +7,26 @@ get_header(); ?>
     while (have_posts()) : the_post(); ?>
 
         <article class="post page" id="hCorrection">
-            <!-- splitting layout of this specific page into columns -->
-            <div class="column-container clearfix">
-                <!-- Title column -->
-                <div class="title-column">
-                    <h2><?php the_title(); ?></h2>
-                    <img src="<?php echo 'get_template_directory_uri'(); ?>/assets/logoblack.png" height="200" width="auto"/>
+           <div class="about">
+                <h2>Who are Dream Quest Studios?</h2>
+                <div class="cards">
+                    <div class="card">
+                        <div class="img"></div>
+                        <h2>The Beginnings</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit. Donec auctor libero efficitur consequat iaculis. Quisque augue velit, aliquet id metus vitae, volutpat porta urna. Vivamus lobortis </p>
+                    </div>
+                    <div class="card">
+                    <div class="img"></div>
+                        <h2>First Game Finished</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit. Donec auctor libero efficitur consequat iaculis. Quisque augue velit, aliquet id metus vitae, volutpat porta urna. Vivamus lobortis </p>
+                    </div>
+                    <div class="card">
+                    <div class="img"></div>
+                        <h2>What's Next?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan orci et metus ornare, ultricies placerat sem elementum. Etiam euismod sit amet arcu non hendrerit. Donec auctor libero efficitur consequat iaculis. Quisque augue velit, aliquet id metus vitae, volutpat porta urna. Vivamus lobortis </p>
+                    </div>
                 </div>
-                <!-- The content column -->
-                <div class="text-column">
-                    <?php the_content(); ?>
-                </div>
-
-            </div>
-
-
+           </div>
         </article>
 <?php endwhile;
 

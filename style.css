@@ -552,6 +552,102 @@ body #titleYear {
           transform: translateY(0);
 }
 
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  color: #53bba9;
+  padding-bottom: 45px;
+}
+
+.about .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 25px;
+  margin: auto;
+}
+
+@media (max-width: 992px) {
+  .about .cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about .cards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.about .cards .card {
+  min-height: 500px;
+  width: 1fr;
+  max-width: 600px;
+  border: 1px solid #53bba9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: start;
+  background-size: 100% 100%;
+  overflow: hidden;
+  background-color: #948c8c27;
+  border-radius: 25px;
+  padding: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .about .cards .card {
+    padding: 15px 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .cards .card {
+    padding: 15px 25px;
+  }
+}
+
+.about .cards .card:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.about .cards .card .img {
+  height: 200px;
+  width: 100%;
+  background-image: url("https://images.jfmedier.dk/images/2/23/234/23432202-afae-4640-9151-7bd95bc7766b_6_90_0_0_800_532_880_585_5e4c06bf.jpg");
+  background-size: 100% 100%;
+  border-radius: 15px 15px 15px 0;
+}
+
+.about .cards .card h2 {
+  color: #e6f512;
+  padding: 10px 0 0 0;
+}
+
+.about .cards .card:nth-child(2) .img {
+  background-image: url("https://boundingintocomics.com/wp-content/uploads/2020/06/2020.06.03-07.37-boundingintocomics-5ed7fbfa4e148.png");
+}
+
+.about .cards .card:last-child .img {
+  background-image: url("https://www.abc.net.au/news/image/954416-3x2-940x627.jpg");
+}
+
 .firefly {
   position: fixed;
   left: 50%;
