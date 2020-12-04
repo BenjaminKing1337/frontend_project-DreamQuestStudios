@@ -9,16 +9,27 @@ get_header(); ?>
         <article class="post page" id="hCorrection">
             <!-- splitting layout of this specific page into columns -->
             <div class="column-container clearfix">
-                <!-- Title column -->
-                <div class="title-column">
-                    <h2><?php the_title(); ?></h2>
-                    <img src="<?php echo 'get_template_directory_uri'(); ?>/assets/logoblack.png" height="200" width="auto"/>
-                </div>
-                <!-- The content column -->
-                <div class="text-column">
-                    <?php the_content(); ?>
-                </div>
+            
+            <div class="faq">
+                    <div><h1 id="fh"><?php the_field('faq_header'); ?></h1></div>
+                    
+                    <div><h3 id="f1"><?php the_field('1st_faq'); ?></h3></div>
+                    <div><h4 id="fa1"><?php the_field('1st_faa'); ?></h4></div>
 
+                    <div><h3 id="f2"><?php the_field('2nd_faq'); ?></h3></div>
+                    <div><h4 id="fa2"><?php the_field('2nd_faa'); ?></h4></div>
+
+                    <div><h3 id="f3"><?php the_field('3rd_faq'); ?></h3></div>
+                    <div><h4 id="fa3"><?php the_field('3rd_faa'); ?></h4></div>
+
+                    <div><h3 id="f4"><?php the_field('4th_faq'); ?></h3></div>
+                    <div><h4 id="fa4"><?php the_field('4th_faa'); ?></h4></div>
+
+                    <div><h3 id="f5"><?php the_field('5th_faq'); ?></h3></div>
+                    <div><h4 id="fa5"><?php the_field('5th_faa'); ?></h4></div>
+
+
+                </div>
             </div>
 
 

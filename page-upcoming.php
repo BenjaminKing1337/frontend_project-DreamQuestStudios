@@ -33,13 +33,13 @@ get_header(); ?>
                 <p><?php the_field('1st_paragraph'); ?></p>
             
                 <div class="projects">
-                    <div class="placeholder">
+                    <div id="placeholder1" class="placeholder">
                         <h2><?php the_field('1st_u_header'); ?></h2>
                     </div>
-                    <div class="placeholder">
+                    <div id="placeholder2" class="placeholder">
                         <h2><?php the_field('2nd_u_header'); ?></h2>
                     </div>
-                    <div class="placeholder">
+                    <div id="placeholder3" class="placeholder">
                         <h2><?php the_field('3rd_u_header'); ?></h2>
                     </div>
                 </div>

@@ -9,14 +9,13 @@ get_header(); ?>
         <article class="post page" id="hCorrection">
             <!-- splitting layout of this specific page into columns -->
             <div class="column-container clearfix">
-                <!-- Title column -->
-                <div class="title-column">
-                    <h2><?php the_title(); ?></h2>
-                    <img src="<?php echo 'get_template_directory_uri'(); ?>/assets/logoblack.png" height="200" width="auto"/>
-                </div>
-                <!-- The content column -->
-                <div class="text-column">
-                    <?php the_content(); ?>
+                <div class="contact-info">
+                    <div><h1><?php the_field('contact_header'); ?></h1></div>
+                    
+                    <div><h3 id="info1"><?php the_field('1st_info'); ?></h3></div>
+                    <hr>
+                    <div><h3 id="info2"><?php the_field('2nd_info'); ?></h3></div>
+                    <hr>
                 </div>
 
             </div>
