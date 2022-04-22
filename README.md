@@ -5,3 +5,5 @@ PHP Project about a fictional company website for the game "Xanthous" I worked o
 Hosted on 000webhost
 
 https://thedreamquest.000webhostapp.com/
+
+Created by Benjamin King, Samuel Kuzma, Ákos Gyetván & Kristián Geci
